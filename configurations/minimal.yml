@@ -1,0 +1,8 @@
+provider:
+  name: aws
+  region: eu-central-1
+
+functions:
+  hello:
+    runtime: nodejs14.x
+    handler: handler.hello
