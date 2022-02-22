@@ -21,7 +21,7 @@ struct ConfigModifier {
     /// - Parameter input: The yaml string to modify
     /// - Returns: YAML string modified based on rules
     static func modify(_ config: String, modifications: [Modification]) throws -> String {
-        let yamlDict = try Helper.getDictFromYAMLString(config)
+        let yamlDict = try ParsingHelper.getDictFromYAMLString(config)
         let modifiedDict = handleNodeModify(yamlDict, modifications: modifications)
         let output = try Yams.dump(object: modifiedDict, sortKeys: true)
         

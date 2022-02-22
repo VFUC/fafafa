@@ -1,5 +1,5 @@
 //
-//  Helper.swift
+//  ParsingHelper.swift
 //  
 //
 //  Created by Jonas Wippermann on 31.01.22.
@@ -8,7 +8,7 @@
 import Foundation
 import Yams
 
-struct Helper {
+struct ParsingHelper {
     enum ParserError: Error {
         case invalidInput
     }

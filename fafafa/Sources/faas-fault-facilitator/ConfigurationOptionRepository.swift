@@ -33,7 +33,6 @@ struct ConfigurationOptionRepository {
         case "runtime":
             return ConfigurationOption(constraints: [
                 EnumerationConstraint(expectedValues: AWS.runtimes, unexpectedValues: ["cplusplus", "nodejs8.x"]
-                                      // TODO: matchingLanguageEnvironmentConstraint (pass in environment which evaluated source code files)
                                      )])
 
         case "layers", "securityGroupIds", "subnetIds": // these are all collections of references

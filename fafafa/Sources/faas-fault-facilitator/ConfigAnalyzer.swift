@@ -16,7 +16,7 @@ struct ConfigAnalyzer {
     /// - Parameter input: The yaml config string
     /// - Returns: list of matched keys
     static func analyze(_ config: String) throws -> [MatchedNode] {
-        let yamlDict = try Helper.getDictFromYAMLString(config)
+        let yamlDict = try ParsingHelper.getDictFromYAMLString(config)
         return handleNodeAnalyze(yamlDict)
     }
 

@@ -10,7 +10,6 @@ import Foundation
 struct TestBedConfigurations {
     /// config verified by successfully deploying using `serverless deploy`
     static let nodeHTTPApiConfig = """
-org: wonas
 app: testbed-aws-node-http-api
 service: aws-node-http-api
 frameworkVersion: '3'
@@ -41,9 +40,9 @@ functions:
           method: get
     vpc:
       securityGroupIds:
-        - sg-01c05c462b5e7bb89
+        - sg-01c05c462b5e7aa12
       subnetIds:
-        - subnet-00367cabb6c4c3869
+        - subnet-00367bbca6c4c3869
   bye:
     runtime: nodejs12.x
     handler: byeHandler.bye
@@ -52,14 +51,14 @@ functions:
     provisionedConcurrency: 1
     reservedConcurrency: 5
     layers:
-      - arn:aws:lambda:eu-central-1:799383571723:layer:AWS-SDK-v2_713_0:1
+      - arn:aws:lambda:eu-central-1:123456789123:layer:AWS-SDK-v2_713_0:1
     events:
       - httpApi:
           path: /bye
           method: get
 
   imageHello:
-    image: 799383571723.dkr.ecr.eu-central-1.amazonaws.com/aws-lambda-hello:latest
+    image: 123456789123.dkr.ecr.eu-central-1.amazonaws.com/aws-lambda-hello:latest
     events:
       - httpApi:
           path: /image
@@ -74,6 +73,5 @@ functions:
       - httpApi:
           path: /packaged
           method: get
-
 """
 }
