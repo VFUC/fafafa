@@ -1,6 +1,9 @@
 # FaaS Fault Facilitator
 
 
+See overview of identified config options [here](/documentation/faas_platform_config_options.md)
+
+
 ## I just want a quick demo
 
 Clone this repo, `cd` into it, start Docker, run the following:
@@ -29,3 +32,8 @@ A few things to note here:
 - `-o` and an output file can be omitted (then the result is printed to the console)
 
 Additionally, please note that some functionality (currently wildcard pattern matching) is limited to macOS
+
+
+##### Fa Fa Fa 
+
+[Fa Fa Fa Fa Fa](https://www.youtube.com/watch?v=AtGlWOIec40)
