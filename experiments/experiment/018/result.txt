@@ -1,0 +1,22 @@
+Warning: Invalid configuration encountered
+  at 'functions.hello.memorySize': must be >= 128
+
+Learn more about configuration validation here: http://slss.io/configuration-validation
+
+Deploying aws-node-http-api to stage dev (eu-central-1)
+Warning: Serverless Dashboard doesn't support functions that reference AWS ECR images
+
+✖ Stack aws-node-http-api-dev failed to deploy (118s)
+Environment: darwin, node 17.4.0, framework 3.1.1, plugin 6.0.0, SDK 4.3.1
+Credentials: Local, "default" profile
+Docs:        docs.serverless.com
+Support:     forum.serverless.com
+Bugs:        github.com/serverless/serverless/issues
+
+Error:
+CREATE_FAILED: HelloLambdaFunction (AWS::Lambda::Function)
+Resource handler returned message: "1 validation error detected: Value '127' at 'memorySize' failed to satisfy constraint: Member must have value greater than or equal to 128 (Service: Lambda, Status Code: 400, Request ID: 57a9c390-1147-4ace-b1df-6c71288705dc, Extended Request ID: null)" (RequestToken: ead16d30-c19b-4a57-3f1b-3873d4ec3497, HandlerErrorCode: InvalidRequest)
+
+View the full error: https://eu-central-1.console.aws.amazon.com/cloudformation/home?region=eu-central-1#/stack/detail?stackId=arn%3Aaws%3Acloudformation%3Aeu-central-1%3A799383571723%3Astack%2Faws-node-http-api-dev%2Fa92f5440-90be-11ec-8e5f-027756379ea2
+
+1 deprecation found: run 'serverless doctor' for more details

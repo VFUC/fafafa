@@ -1,0 +1,24 @@
+Deploying aws-node-http-api to stage dev (eu-central-1)
+Warning: Serverless Dashboard doesn't support functions that reference AWS ECR images
+
+✔ Service deployed to stack aws-node-http-api-dev (260s)
+
+dashboard: https://app.serverless.com/wonas/apps/testbed-aws-node-http-api/aws-node-http-api/dev/eu-central-1
+endpoints:
+  GET - https://1fwdsx50m6.execute-api.eu-central-1.amazonaws.com/bye
+  GET - https://1fwdsx50m6.execute-api.eu-central-1.amazonaws.com/
+  GET - https://1fwdsx50m6.execute-api.eu-central-1.amazonaws.com/image
+  GET - https://1fwdsx50m6.execute-api.eu-central-1.amazonaws.com/packaged
+functions:
+  bye: aws-node-http-api-dev-bye (427 kB)
+  hello: aws-node-http-api-dev-hello (427 kB)
+  imageHello: aws-node-http-api-dev-imageHello
+  packagedHello: aws-node-http-api-dev-packagedHello (193 kB)
+
+============
+HTTP API GET responses:
+
+hello: Hello from Testbed!
+bye: Bye from Testbed!
+imageHello: Hello from Docker image!
+packagedHello: {"message":"Internal Server Error"}

@@ -1,0 +1,15 @@
+Deploying aws-node-http-api to stage dev (eu-central-1)
+Warning: Serverless Dashboard doesn't support functions that reference AWS ECR images
+
+✖ Stack aws-node-http-api-dev failed to deploy (108s)
+Environment: darwin, node 17.4.0, framework 3.1.1, plugin 6.0.0, SDK 4.3.1
+Credentials: Local, "default" profile
+Docs:        docs.serverless.com
+Support:     forum.serverless.com
+Bugs:        github.com/serverless/serverless/issues
+
+Error:
+CREATE_FAILED: HelloLambdaFunction (AWS::Lambda::Function)
+Resource handler returned message: "1 validation error detected: Value '[Zg-0r805146275e7bb80]' at 'vpcConfig.securityGroupIds' failed to satisfy constraint: Member must satisfy constraint: [Member must have length less than or equal to 1024, Member must have length greater than or equal to 0, Member must satisfy regular expression pattern: ^sg-[0-9a-zA-Z]*$] (Service: Lambda, Status Code: 400, Request ID: 2a7b0ad2-ec4a-45e0-a041-bad356e94d85, Extended Request ID: null)" (RequestToken: a08b7fbc-28e8-c3e2-7483-5ab9d9a3ec9a, HandlerErrorCode: InvalidRequest)
+
+View the full error: https://eu-central-1.console.aws.amazon.com/cloudformation/home?region=eu-central-1#/stack/detail?stackId=arn%3Aaws%3Acloudformation%3Aeu-central-1%3A799383571723%3Astack%2Faws-node-http-api-dev%2Fec8400f0-90bf-11ec-8d93-06eb173a62e4

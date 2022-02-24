@@ -1,0 +1,12 @@
+Deploying aws-node-http-api to stage dev (eu-central-1)
+Warning: Serverless Dashboard doesn't support functions that reference AWS ECR images
+
+✖ Stack aws-node-http-api-dev failed to deploy (1s)
+Environment: darwin, node 17.4.0, framework 3.1.1, plugin 6.0.0, SDK 4.3.1
+Credentials: Local, "default" profile
+Docs:        docs.serverless.com
+Support:     forum.serverless.com
+Bugs:        github.com/serverless/serverless/issues
+
+Error:
+Error: ENOENT: no such file or directory, open 'EXnwleo.tit'

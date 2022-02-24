@@ -1,0 +1,15 @@
+Deploying aws-node-http-api to stage dev (eu-central-1)
+Warning: Serverless Dashboard doesn't support functions that reference AWS ECR images
+
+✖ Stack aws-node-http-api-dev failed to deploy (108s)
+Environment: darwin, node 17.4.0, framework 3.1.1, plugin 6.0.0, SDK 4.3.1
+Credentials: Local, "default" profile
+Docs:        docs.serverless.com
+Support:     forum.serverless.com
+Bugs:        github.com/serverless/serverless/issues
+
+Error:
+CREATE_FAILED: HelloLambdaFunction (AWS::Lambda::Function)
+Resource handler returned message: "Lambda was unable to configure your environment variables because the environment variables you have provided contains reserved keys that are currently not supported for modification. Reserved keys used in this request: AWS_REGION (Service: Lambda, Status Code: 400, Request ID: 155e7e83-cd79-4468-bc21-995756685f70, Extended Request ID: null)" (RequestToken: 38f66211-9bca-cc28-d9b7-d189513b554c, HandlerErrorCode: InvalidRequest)
+
+View the full error: https://eu-central-1.console.aws.amazon.com/cloudformation/home?region=eu-central-1#/stack/detail?stackId=arn%3Aaws%3Acloudformation%3Aeu-central-1%3A799383571723%3Astack%2Faws-node-http-api-dev%2Fdf6ff8d0-8d20-11ec-98f6-06064f39fa88

@@ -1,0 +1,23 @@
+
+Warning: Invalid configuration encountered
+  at 'functions.hello.maximumRetryAttempts': must be <= 2
+
+Learn more about configuration validation here: http://slss.io/configuration-validation
+
+Deploying aws-node-http-api to stage dev (eu-central-1)
+Warning: Serverless Dashboard doesn't support functions that reference AWS ECR images
+
+✖ Stack aws-node-http-api-dev failed to deploy (252s)
+Environment: darwin, node 17.4.0, framework 3.1.1, plugin 6.0.0, SDK 4.3.1
+Credentials: Local, "default" profile
+Docs:        docs.serverless.com
+Support:     forum.serverless.com
+Bugs:        github.com/serverless/serverless/issues
+
+Error:
+CREATE_FAILED: HelloLambdaEvConf (AWS::Lambda::EventInvokeConfig)
+1 validation error detected: Value '3' at 'maximumRetryAttempts' failed to satisfy constraint: Member must have value less than or equal to 2 (Service: AWSLambdaInternal; Status Code: 400; Error Code: ValidationException; Request ID: a0229dc2-a4b4-48b5-ba92-3afa34b7e9e4; Proxy: null)
+
+View the full error: https://eu-central-1.console.aws.amazon.com/cloudformation/home?region=eu-central-1#/stack/detail?stackId=arn%3Aaws%3Acloudformation%3Aeu-central-1%3A799383571723%3Astack%2Faws-node-http-api-dev%2Fab5f8ca0-90bc-11ec-896d-0abb2e2e4f66
+
+1 deprecation found: run 'serverless doctor' for more details

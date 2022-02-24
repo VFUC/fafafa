@@ -1,0 +1,18 @@
+Warning: Invalid configuration encountered
+  at 'provider.region': must be equal to one of the allowed values [us-east-1, us-east-2, us-gov-east-1, us-gov-west-1, us-iso-east-1, us-iso-west-1, us-isob-east-1, us-west-1, us-west-2, af-south-1, ap-east-1, ap-northeast-1, ap-northeast-2, ap-northeast-3, ap-south-1, ap-southeast-1, ap-southeast-2, ap-southeast-3, ca-central-1, cn-north-1, cn-northwest-1, eu-central-1, eu-north-1, eu-south-1, eu-west-1, eu-west-2, eu-west-3, me-south-1, sa-east-1]
+
+Learn more about configuration validation here: http://slss.io/configuration-validation
+
+Deploying aws-node-http-api to stage dev (eu-central-3)
+
+✖ Stack aws-node-http-api-dev failed to deploy (0s)
+Environment: darwin, node 17.4.0, framework 3.1.1, plugin 6.0.0, SDK 4.3.1
+Credentials: Local, "default" profile
+Docs:        docs.serverless.com
+Support:     forum.serverless.com
+Bugs:        github.com/serverless/serverless/issues
+
+Error:
+"eu-central-3" region is not supported by dashboard
+
+1 deprecation found: run 'serverless doctor' for more details

@@ -1,0 +1,22 @@
+Warning: Invalid configuration encountered
+  at 'provider.iam.role.statements.0.Effect': must be equal to one of the allowed values [Allow, Deny]
+
+Learn more about configuration validation here: http://slss.io/configuration-validation
+
+Deploying aws-node-http-api to stage dev (eu-central-1)
+Warning: Serverless Dashboard doesn't support functions that reference AWS ECR images
+
+✖ Stack aws-node-http-api-dev failed to deploy (82s)
+Environment: darwin, node 17.4.0, framework 3.1.1, plugin 6.0.0, SDK 4.3.1
+Credentials: Local, "default" profile
+Docs:        docs.serverless.com
+Support:     forum.serverless.com
+Bugs:        github.com/serverless/serverless/issues
+
+Error:
+CREATE_FAILED: IamRoleLambdaExecution (AWS::IAM::Role)
+Syntax errors in policy. (Service: AmazonIdentityManagement; Status Code: 400; Error Code: MalformedPolicyDocument; Request ID: 51e0e0ee-c6fd-478d-b1ee-ae5b25a05f9f; Proxy: null)
+
+View the full error: https://eu-central-1.console.aws.amazon.com/cloudformation/home?region=eu-central-1#/stack/detail?stackId=arn%3Aaws%3Acloudformation%3Aeu-central-1%3A799383571723%3Astack%2Faws-node-http-api-dev%2F2b9d4ce0-90cc-11ec-8ea5-0a2ee57bdc98
+
+1 deprecation found: run 'serverless doctor' for more details

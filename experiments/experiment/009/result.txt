@@ -1,0 +1,21 @@
+Warning: Invalid configuration encountered
+  at 'functions.bye.reservedConcurrency': unsupported integer format
+
+Learn more about configuration validation here: http://slss.io/configuration-validation
+
+Deploying aws-node-http-api to stage dev (eu-central-1)
+Warning: Serverless Dashboard doesn't support functions that reference AWS ECR images
+
+✖ Stack aws-node-http-api-dev failed to deploy (113s)
+Environment: darwin, node 17.4.0, framework 3.1.1, plugin 6.0.0, SDK 4.3.1
+Credentials: Local, "default" profile
+Docs:        docs.serverless.com
+Support:     forum.serverless.com
+Bugs:        github.com/serverless/serverless/issues
+
+Error:
+CREATE_FAILED: ByeLambdaFunction (AWS::Lambda::Function)
+Properties validation failed for resource ByeLambdaFunction with message:
+#/ReservedConcurrentExecutions: failed validation constraint for keyword [minimum]
+
+View the full error: https://eu-central-1.console.aws.amazon.com/cloudformation/home?region=eu-central-1#/stack/detail?stackId=arn%3Aaws%3Acloudformation%3Aeu-central-1%3A799383571723%3Astack%2Faws-node-http-api-dev%2F180d7440-8d14-11ec-893a-0a3a88e4dc1a

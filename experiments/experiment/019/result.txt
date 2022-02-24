@@ -1,0 +1,23 @@
+Warning: Invalid configuration encountered
+  at 'functions.hello.runtime': must be equal to one of the allowed values [dotnetcore3.1, go1.x, java11, java8, java8.al2, nodejs12.x, nodejs14.x, provided, provided.al2, python3.6, python3.7, python3.8, python3.9, ruby2.7]
+
+Learn more about configuration validation here: http://slss.io/configuration-validation
+
+Deploying aws-node-http-api to stage dev (eu-central-1)
+Warning: Serverless Dashboard doesn't support the following runtime: dotnetcore2.1
+Warning: Serverless Dashboard doesn't support functions that reference AWS ECR images
+
+✖ Stack aws-node-http-api-dev failed to deploy (104s)
+Environment: darwin, node 17.4.0, framework 3.1.1, plugin 6.0.0, SDK 4.3.1
+Credentials: Local, "default" profile
+Docs:        docs.serverless.com
+Support:     forum.serverless.com
+Bugs:        github.com/serverless/serverless/issues
+
+Error:
+CREATE_FAILED: HelloLambdaFunction (AWS::Lambda::Function)
+Resource handler returned message: "Runtime dotnetcore2.1 does not support the following architectures [arm64]. Please select different architectures from [x86_64] or select a different runtime. (Service: Lambda, Status Code: 400, Request ID: 0def99ba-7899-461b-95e6-b33d09a2f9c5, Extended Request ID: null)" (RequestToken: 191c8e5e-e001-6d50-e4ab-63cee9bc0852, HandlerErrorCode: InvalidRequest)
+
+View the full error: https://eu-central-1.console.aws.amazon.com/cloudformation/home?region=eu-central-1#/stack/detail?stackId=arn%3Aaws%3Acloudformation%3Aeu-central-1%3A799383571723%3Astack%2Faws-node-http-api-dev%2F49b11ca0-90bf-11ec-b623-06a51b47056a
+
+1 deprecation found: run 'serverless doctor' for more details

@@ -1,0 +1,15 @@
+Deploying aws-node-http-api to stage dev (eu-central-1)
+Warning: Serverless Dashboard doesn't support functions that reference AWS ECR images
+
+✖ Stack aws-node-http-api-dev failed to deploy (73s)
+Environment: darwin, node 17.4.0, framework 3.1.1, plugin 6.0.0, SDK 4.3.1
+Credentials: Local, "default" profile
+Docs:        docs.serverless.com
+Support:     forum.serverless.com
+Bugs:        github.com/serverless/serverless/issues
+
+Error:
+CREATE_FAILED: ByeLambdaFunction (AWS::Lambda::Function)
+Resource handler returned message: "1 validation error detected: Value '[arn:aes:lambda:eu-central-z:7993835Z1723:layer:AWS-SDK-J2_N1Q_0:1]' at 'layers' failed to satisfy constraint: Member must satisfy constraint: [Member must have length less than or equal to 140, Member must have length greater than or equal to 1, Member must satisfy regular expression pattern: (arn:[a-zA-Z0-9-]+:lambda:[a-zA-Z0-9-]+:\d{12}:layer:[a-zA-Z0-9-_]+:[0-9]+)|(arn:[a-zA-Z0-9-]+:lambda:::awslayer:[a-zA-Z0-9-_]+)] (Service: Lambda, Status Code: 400, Request ID: b210eff8-521d-4c71-9f57-4651378d4763, Extended Request ID: null)" (RequestToken: 2a120988-6046-b2fe-812e-9e8257015373, HandlerErrorCode: InvalidRequest)
+
+View the full error: https://eu-central-1.console.aws.amazon.com/cloudformation/home?region=eu-central-1#/stack/detail?stackId=arn%3Aaws%3Acloudformation%3Aeu-central-1%3A799383571723%3Astack%2Faws-node-http-api-dev%2F80efcab0-8ce9-11ec-9038-067c4bec2110

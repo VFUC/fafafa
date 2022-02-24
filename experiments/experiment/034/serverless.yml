@@ -1,0 +1,60 @@
+app: testbed-aws-node-http-api
+frameworkVersion: '3'
+functions:
+  bye:
+    events:
+    - httpApi:
+        method: get
+        path: /bye
+    handler: byeHandler.bye
+    layers:
+    - arn:aws:lambda:eu-central-1:799383571723:layer:AWS-SDK-v2_713_0:1
+    maximumEventAge: 300
+    provisionedConcurrency: 1
+    reservedConcurrency: 5
+    runtime: nodejs12.x
+    timeout: 20
+  hello:
+    architecture: arm64
+    environment:
+      APP_ENDPOINT: example.com
+    events:
+    - httpApi:
+        method: get
+        path: /
+    handler: handler.hello
+    maximumRetryAttempts: 1
+    memorySize: 512
+    runtime: nodejs14.x
+    vpc:
+      securityGroupIds:
+      - sg-01c05c462b5e7bb89
+      subnetIds:
+      - subnet-00367cabb6c4c3869
+  imageHello:
+    events:
+    - httpApi:
+        method: get
+        path: /image
+    image: 799383571723.dkr.ecr.eu-central-1.amazonaws.com/aws-lambda-hello:latest
+  packagedHello:
+    events:
+    - httpApi:
+        method: get
+        path: /packaged
+    handler: handler.hello
+    package:
+      artifact: handler.zip
+    runtime: nodejs14.x
+org: wonas
+provider:
+  iam:
+    role:
+      name: custom-role-name
+      statements:
+      - Action: s3:GetObject
+        Effect: Allow
+        Resource: arn:aws:s3:::awstestbed.mybucket/*
+  name: aws
+  region: us-gov-west-1
+service: aws-node-http-api

@@ -1,0 +1,22 @@
+Warning: Invalid configuration encountered
+  at 'functions.bye.runtime': must be equal to one of the allowed values [dotnetcore3.1, go1.x, java11, java8, java8.al2, nodejs12.x, nodejs14.x, provided, provided.al2, python3.6, python3.7, python3.8, python3.9, ruby2.7]
+
+Learn more about configuration validation here: http://slss.io/configuration-validation
+
+Deploying aws-node-http-api to stage dev (eu-central-1)
+Warning: Serverless Dashboard doesn't support functions that reference AWS ECR images
+
+✖ Stack aws-node-http-api-dev failed to deploy (102s)
+Environment: darwin, node 17.4.0, framework 3.1.1, plugin 6.0.0, SDK 4.3.1
+Credentials: Local, "default" profile
+Docs:        docs.serverless.com
+Support:     forum.serverless.com
+Bugs:        github.com/serverless/serverless/issues
+
+Error:
+CREATE_FAILED: ByeLambdaFunction (AWS::Lambda::Function)
+Resource handler returned message: "Value nodejs8.x at 'runtime' failed to satisfy constraint: Member must satisfy enum value set: [nodejs12.x, python3.6, provided, nodejs14.x, ruby2.7, java11, go1.x, provided.al2, java8, java8.al2, dotnetcore3.1, python3.7, python3.8, python3.9] or be a valid ARN (Service: Lambda, Status Code: 400, Request ID: 7e3c4782-872a-47aa-9ab8-d9b54d1a0e78, Extended Request ID: null)" (RequestToken: 3e34954b-52ca-c363-7413-bafe60d9dca1, HandlerErrorCode: InvalidRequest)
+
+View the full error: https://eu-central-1.console.aws.amazon.com/cloudformation/home?region=eu-central-1#/stack/detail?stackId=arn%3Aaws%3Acloudformation%3Aeu-central-1%3A799383571723%3Astack%2Faws-node-http-api-dev%2Fa2c5ff30-8d14-11ec-b45a-0a5f8c696be2
+
+1 deprecation found: run 'serverless doctor' for more details

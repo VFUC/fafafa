@@ -1,0 +1,31 @@
+Warning: Invalid configuration encountered
+  at 'provider.iam.role.statements.0.Resource.0': unsupported string format
+
+Learn more about configuration validation here: http://slss.io/configuration-validation
+
+Deploying aws-node-http-api to stage dev (eu-central-1)
+Warning: Serverless Dashboard doesn't support functions that reference AWS ECR images
+
+✔ Service deployed to stack aws-node-http-api-dev (255s)
+
+dashboard: https://app.serverless.com/wonas/apps/testbed-aws-node-http-api/aws-node-http-api/dev/eu-central-1
+endpoints:
+  GET - https://jmxqrq3w19.execute-api.eu-central-1.amazonaws.com/bye
+  GET - https://jmxqrq3w19.execute-api.eu-central-1.amazonaws.com/
+  GET - https://jmxqrq3w19.execute-api.eu-central-1.amazonaws.com/image
+  GET - https://jmxqrq3w19.execute-api.eu-central-1.amazonaws.com/packaged
+functions:
+  bye: aws-node-http-api-dev-bye (427 kB)
+  hello: aws-node-http-api-dev-hello (427 kB)
+  imageHello: aws-node-http-api-dev-imageHello
+  packagedHello: aws-node-http-api-dev-packagedHello (193 kB)
+
+1 deprecation found: run 'serverless doctor' for more details
+
+============
+HTTP API GET responses:
+
+hello: Hello from Testbed!
+bye: Bye from Testbed!
+imageHello: Hello from Docker image!
+packagedHello: Hello from packaged function!
