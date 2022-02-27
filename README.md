@@ -1,22 +1,33 @@
 # FaaS Fault Facilitator
 
+Examplary approach to perform **Fault Injection** in Function-as-a-Service application deployments.
 
-See overview of identified config options [here](/documentation/faas_platform_config_options.md)
+This implementation focuses on YAML-based deployments to _AWS Lambda_ using the _Serverless_ framework.
 
 
-## I just want a quick demo
+## Research Results
+
+_paper tbd_
+
+See overview of identified config options [here](/documentation/faas_platform_config_options.md).
+
+See results of experiment observations [here](/experiments).
+
+## Using the tool
+
+### TL;DR demo
 
 Clone this repo, `cd` into it, start Docker, run the following:
 
 `docker run -it -v ${PWD}/configurations:/confs anyxo/fafafa /confs/minimal.yml`
 
 
-## Running with Swift
+### Running with Swift
 
 Clone this repo, `cd fafafa`, run `swift run <config.yml>`
 
 
-## Running with Docker
+### Running with Docker
 
 - create a local folder for your configuration input and output, e.g.
 	- `mkdir myconfig`
@@ -34,6 +45,6 @@ A few things to note here:
 Additionally, please note that some functionality (currently wildcard pattern matching) is limited to macOS
 
 
-##### Fa Fa Fa 
+## Fa Fa Fa 
 
 [Fa Fa Fa Fa Fa](https://www.youtube.com/watch?v=AtGlWOIec40)
