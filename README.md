@@ -1,6 +1,6 @@
 # FaaS Fault Facilitator
 
-Examplary approach to perform **Fault Injection** in Function-as-a-Service application deployments.
+Exemplary approach to perform **Fault Injection** in Function-as-a-Service application deployments.
 
 This implementation focuses on YAML-based deployments to _AWS Lambda_ using the _Serverless_ framework.
 
